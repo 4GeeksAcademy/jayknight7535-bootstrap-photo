@@ -14,7 +14,8 @@
         <img src="https://th.bing.com/th/id/R.ecf089cbab4bac5a31a407e7d5108c0a?rik=g1ZAPYX4d7j0Sw&pid=ImgRaw&r=0" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         mythical
       </a>
-      <div class="nav-item dropdown justify-content-end">
+    <div class="nav nav-pills flex-column flex-sm-row">
+      <div class="nav-item dropdown">
         <button type="button" class="btn btn secondary">
           <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="visually-hidden">Toggle Dropdown</span>
@@ -27,13 +28,12 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item link-danger" href="#">log out</a></li>
         </ul>
-      </div>
-    </div>  
+    </div>
     <div class="nav-item">
       <button type="button" class="btn btn-success justify-content-end" data-bs-toggle="modal" data-bs-target="#modal-tag">
         create new post
       </button>
-      <!-- Modal -->
+        <!-- Modal -->
       <div class="modal fade" id="modal-tag" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -55,8 +55,9 @@
         </div>
       </div>
     </div>
-  </div>  
-    <ul class="nav nav-item" id="myTab" role="tablist">
+  </nav>
+  <nav>
+    <ul class="nav justify-content-center" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Grid</button>
       </li>
@@ -107,21 +108,15 @@
     </div>
     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
       <div class="d-flex flex-column mb-3 mx-auto p-2 mx-auto p-2" style="width: 80%">
-        <div class="flex-container">
-          <div class="fs-2">Cute little dragon</div>
-          <div class="fs-5 text-sm-end">5/16</div>
-        </div>  
+        <div class="fs-2 d-flex justify-content-between">Cute little dragon <span class="fs-5">5/16</span></div>
         <div class="p-2"><img src="https://img.freepik.com/premium-photo/cute-blue-dragon-cartoon-isolated-white-background-vector-illustration_994418-23266.jpg?w=2000" class="img-fluid text-center" alt="dragon"></div>
         <div class="p-2">
           <div><strong>74648 likes</strong></div>
           <div>Weastern dragons are creature with a set of wings and 4 legs. Often known for having a powerful breath. The most common is fire breathing but lore also shows acid, ice, and so many other. They are known to create hoards comprised of many valuable items usually gems and treasure</div>
         </div>
       </div>
-      <div class="d-flex flex-column mb-3 mx-auto p-2" style="width: 80%">
-        <div class="p-2 flex-container">
-          <div class="fs-5">Baby phoenix</div>
-          <div class="fs-5 text-sm-end">3/16</div>
-        </div>
+      <div class="d-flex flex-column mb-3 mx-auto p-2 mx-auto p-2" style="width: 80%">
+        <div class="fs-2 d-flex justify-content-between">Baby phoenix <span class="fs-5">3/16</span></div>
         <div class="p-2"><img src="https://cdn.pixabay.com/photo/2024/06/17/19/58/phoenix-8836441_1280.jpg" class="text-center img-fluid" alt="phoenix"></div>
         <div class="p-2">
           <div><strong>26429 likes</strong></div>
@@ -129,10 +124,7 @@
         </div>
       </div>
       <div class="d-flex flex-column mb-3 mx-auto p-2" style="width: 80%">
-        <div class="flex-container">
-          <div class="p-2 fs-2">baby griffin</div>
-          <div class="fs-5 text-sm-end">1/25</div>
-        </div>
+          <div class="fs-2 d-flex justify-content-between">baby griffin<span class="fs-5">1/25</span></div>
         <div class="p-2"><img src="https://cdn.openart.ai/published/dKOb2q4NHzOorebxhOHn/Y5ZRmi01_zpTJ_1024.webp" class="img-fluid text-center" alt="griffin"></div>
         <div class="p-2">
           <div><strong>8675 likes</strong></div>
