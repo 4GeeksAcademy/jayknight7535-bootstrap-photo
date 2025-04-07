@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap photo feed</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar bg-body-tertiary">
@@ -13,22 +14,23 @@
         <img src="https://th.bing.com/th/id/R.ecf089cbab4bac5a31a407e7d5108c0a?rik=g1ZAPYX4d7j0Sw&pid=ImgRaw&r=0" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         mythical
       </a>
-    </div>
-    <span class="btn-group">
-      <button type="button" class="btn btn-secondary"></button>
-        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="visually-hidden">Toggle Dropdown</span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">profile</a></li>
-        <li><a class="dropdown-item" href="#"></a> accessibility</li>
-        <li><a class="dropdown-item" href="#">privacy & data</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item link-danger" href="#">log out</a></li>
-      </ul>
-    </span>
-    <span>
-      <button type="button" class="btn btn-success d-flex" data-bs-toggle="modal" data-bs-target="#modal-tag">
+      <div class="nav-item dropdown justify-content-end">
+        <button type="button" class="btn btn secondary">
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">profile</a></li>
+          <li><a class="dropdown-item" href="#"></a> accessibility</li>
+          <li><a class="dropdown-item" href="#">privacy & data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item link-danger" href="#">log out</a></li>
+        </ul>
+      </div>
+    </div>  
+    <div class="nav-item">
+      <button type="button" class="btn btn-success justify-content-end" data-bs-toggle="modal" data-bs-target="#modal-tag">
         create new post
       </button>
       <!-- Modal -->
@@ -53,52 +55,53 @@
         </div>
       </div>
     </div>
-  </div>
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-    </li>
-  </ul>
+  </div>  
+    <ul class="nav nav-item" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Grid</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Coulmn</button>
+      </li>
+    </ul>
+  </nav>
   <div class="tab-content" id="myTabContent">   
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
       <div class="container text-center">
         <div class="row ">
           <div class="col">
-            <img src="https://img.freepik.com/premium-photo/cute-blue-dragon-cartoon-isolated-white-background-vector-illustration_994418-23266.jpg?w=2000" class="img-fluid" alt="dragon">
+            <img src="https://img.freepik.com/premium-photo/cute-blue-dragon-cartoon-isolated-white-background-vector-illustration_994418-23266.jpg?w=2000" class="img-fluid" alt="dragon" style="width:400px">
           </div>
           <div class="col">
-            <img src="https://cdn.pixabay.com/photo/2024/06/17/19/58/phoenix-8836441_1280.jpg" class="img-fluid" alt="phoenix">
+            <img src="https://cdn.pixabay.com/photo/2024/06/17/19/58/phoenix-8836441_1280.jpg" class="img-fluid" alt="phoenix"style="width:400px">
           </div>
           <div class="col">
-            <img src="https://th.bing.com/th/id/OIP.nz0xtCd_Mp-Bj24HiL5LSgHaHa?rs=1&pid=ImgDetMain" class="img-fluid" alt="griffin">
+            <img src="https://cdn.openart.ai/published/dKOb2q4NHzOorebxhOHn/Y5ZRmi01_zpTJ_1024.webp" class="img-fluid" alt="griffin"style="width:400px">
           </div>
         </div>
       </div>
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            <img src="https://th.bing.com/th/id/OIP.UAtbUv3E4J4Vvt3lU01b3QHaHa?rs=1&pid=ImgDetMain" class="img-fluid" alt="werewolf">
+            <img src="https://th.bing.com/th/id/OIP.UAtbUv3E4J4Vvt3lU01b3QHaHa?rs=1&pid=ImgDetMain" class="img-fluid" alt="werewolf" style="width:400px">
           </div>
           <div class="col">
-            <img src="https://i.pinimg.com/originals/60/90/16/6090163eadcd63f616423562011df451.png" class="img-fluid" alt="chimera">
+            <img src="https://i.pinimg.com/originals/60/90/16/6090163eadcd63f616423562011df451.png" class="img-fluid" alt="chimera" style="width:400px">
           </div>
           <div class="col">
-            <img src="https://ih1.redbubble.net/image.1211618851.0266/raf,360x360,075,t,fafafa:ca443f4786.jpg" class="img-fluid" alt="cerberus">
+            <img src="https://ih1.redbubble.net/image.1211618851.0266/raf,360x360,075,t,fafafa:ca443f4786.jpg" class="img-fluid" alt="cerberus" style="width:400px">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <img src="https://img.freepik.com/premium-photo/enchanting-adventures-super-cute-mischievous-goblin-baby-pixarquality-photo-realistic-300p_983420-117272.jpg?w=2000" class="img-fluid" alt="goblin">
+          <img src="https://img.freepik.com/premium-photo/enchanting-adventures-super-cute-mischievous-goblin-baby-pixarquality-photo-realistic-300p_983420-117272.jpg?w=2000" class="img-fluid" alt="goblin" style="width:400px">
         </div>
         <div class="col">
-          <img src="https://cdn.designtoscano.com/product_images/archibald-the-baby-gnome-statue-1-qm2693470/606dace95fc37c00194dec69/zoom.jpg?c=1630550009" class="img-fluid" alt="gnome">
+          <img src="https://cdn.designtoscano.com/product_images/archibald-the-baby-gnome-statue-1-qm2693470/606dace95fc37c00194dec69/zoom.jpg?c=1630550009" class="img-fluid" alt="gnome" style="width:400px">
         </div>
         <div class="col">
-          <img src="https://i.pinimg.com/736x/88/4c/c0/884cc00eab1f9891a0691bccb56af802.jpg" class="img-fluid" alt="hydra">
+          <img src="https://i.pinimg.com/736x/88/4c/c0/884cc00eab1f9891a0691bccb56af802.jpg" class="img-fluid" alt="hydra" style="width:400px">
         </div>
       </div>
     </div>
@@ -108,26 +111,29 @@
           <div class="fs-2">Cute little dragon</div>
           <div class="fs-5 text-sm-end">5/16</div>
         </div>  
-        <div class="p-2"><img src="https://img.freepik.com/premium-photo/cute-blue-dragon-cartoon-isolated-white-background-vector-illustration_994418-23266.jpg?w=2000" class="img-fluid" alt="dragon"></div>
+        <div class="p-2"><img src="https://img.freepik.com/premium-photo/cute-blue-dragon-cartoon-isolated-white-background-vector-illustration_994418-23266.jpg?w=2000" class="img-fluid text-center" alt="dragon"></div>
         <div class="p-2">
           <div><strong>74648 likes</strong></div>
           <div>Weastern dragons are creature with a set of wings and 4 legs. Often known for having a powerful breath. The most common is fire breathing but lore also shows acid, ice, and so many other. They are known to create hoards comprised of many valuable items usually gems and treasure</div>
         </div>
       </div>
       <div class="d-flex flex-column mb-3 mx-auto p-2" style="width: 80%">
-        <div class="p-2 fs-2">Baby phoenix</div>
-        <div class="p-2"><img src="https://cdn.pixabay.com/photo/2024/06/17/19/58/phoenix-8836441_1280.jpg" class="img-fluid" alt="phoenix"></div>
+        <div class="p-2 flex-container">
+          <div class="fs-5">Baby phoenix</div>
+          <div class="fs-5 text-sm-end">3/16</div>
+        </div>
+        <div class="p-2"><img src="https://cdn.pixabay.com/photo/2024/06/17/19/58/phoenix-8836441_1280.jpg" class="text-center img-fluid" alt="phoenix"></div>
         <div class="p-2">
           <div><strong>26429 likes</strong></div>
           <div>the phoenix is a flaming bird. it is known to be reborn in the ashes of the bird they used to be</div>
         </div>
       </div>
       <div class="d-flex flex-column mb-3 mx-auto p-2" style="width: 80%">
-        <div class="p-2 fs-2">baby griffin</div>
-          <span>
-            4/6
-          </span>
-        <div class="p-2"><img src="https://th.bing.com/th/id/OIP.nz0xtCd_Mp-Bj24HiL5LSgHaHa?rs=1&pid=ImgDetMain" class="img-fluid text-center" alt="griffin"></div>
+        <div class="flex-container">
+          <div class="p-2 fs-2">baby griffin</div>
+          <div class="fs-5 text-sm-end">1/25</div>
+        </div>
+        <div class="p-2"><img src="https://cdn.openart.ai/published/dKOb2q4NHzOorebxhOHn/Y5ZRmi01_zpTJ_1024.webp" class="img-fluid text-center" alt="griffin"></div>
         <div class="p-2">
           <div><strong>8675 likes</strong></div>
           <div>Griffins are part bird and part lion. They are known to covet wealth similarly to dragons.</div>
